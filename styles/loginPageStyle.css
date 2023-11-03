@@ -1,0 +1,17 @@
+
+.loginPageSpan {
+    width: 200px;
+}
+#loginPageButtonsDiv {
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+#loginPageLogo {
+    color: indigo;
+}
+.loginPageRows{
+    margin: 10px;
+}

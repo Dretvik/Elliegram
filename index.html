@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliegram</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/globalStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/loginPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/registrationPageStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/forgottenPasswordPageStyle.css">
+
+</head>
+<body onload="loginPageView()">
+    <div id="app"></div>
+
+    <!-- Global Scripts -->
+    <script src="./model.js"></script>
+
+    <!-- Login Page JS -->
+    <script src="./pages/loginPage/loginPageView.js"></script>
+    <script src="./pages/loginPage/loginPageController.js"></script>
+
+    <!-- Registration Page JS -->
+    <script src="./pages/registrationPage/registrationPageView.js"></script>
+    <script src="./pages/registrationPage/registrationPageController.js"></script>
+
+    <!-- Forgotten Password Page JS-->
+    <script src="./pages/forgottenPasswordPage/forgottenPasswordPageView.js"></script>
+    <script src="./pages/forgottenPasswordPage/forgottenPasswordPageController.js"></script>
+
+    <!-- Main Page JS-->
+    <script src="./pages/mainPage/mainPageView.js"></script>
+    <script src="./pages/mainPage/mainPageController.js"></script>
+</body>
+</html>
