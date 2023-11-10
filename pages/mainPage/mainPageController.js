@@ -14,3 +14,11 @@ function logoutWarning(isWantToLogout){
     <div>
     `;
 }
+
+function addNotification(){
+    newNotification = {
+        newNote: 'Hello im a new notification',
+    }
+    model.app.loggedInUser.notifications.push(newNotification);
+    mainPageView();
+}

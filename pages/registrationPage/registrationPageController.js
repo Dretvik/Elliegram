@@ -15,6 +15,8 @@ if (email.includes("@")) {
         description: "",
         friends: [],
         hobbies: [],
+        groups: [],
+        notifications: [],
     };
 
     model.data.users.push(newUser);

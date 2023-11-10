@@ -1,4 +1,10 @@
 function mainPageView(){
+    const user = model.app.loggedInUser;
+    const headerProfileImg = user.profilePicture; 
+    const isNotification = user.notifications.length > 0 ? 
+    `<img id="notificationVarning" src="./img/thumbnails/notification.png">
+    <div id="numberOfNotificationsDiv">${model.app.loggedInUser.notifications.length}</div>` :
+    ``;
     app.innerHTML = /*HTML*/`
     <section id="page">
         <header>
@@ -8,7 +14,11 @@ function mainPageView(){
             <button id="logoutButton" onclick="logoutWarning(true)">Logout</button>
             <div id="logoutwarningDiv"></div>
         </header>
-        <nav>Navigation</nav>
+        <nav>
+        <img id="profileImgNavbar" src="${headerProfileImg}">
+            <div id="notificationDiv">${isNotification}</div>
+            <button id="addNotificationBtn" onclick="addNotification()">Add Notification Test Button</button>
+        </nav>
         <main>
             <div id="postStuffDIv">
                 <textarea id="postYourStuff" placeholder="What are you thinking about? Tell your friends!"></textarea>
