@@ -20,5 +20,13 @@ function addNotification(){
         newNote: 'Hello im a new notification',
     }
     model.app.loggedInUser.notifications.push(newNotification);
+    pageTitleNotification();
     mainPageView();
+}
+
+function pageTitleNotification(){
+    const isNotificationTitle = model.app.loggedInUser.notifications.length > 0 ? 
+    `Elliegram (${model.app.loggedInUser.notifications.length})` :
+    `Elliegram`;
+    document.getElementById('pageTitle').innerText = isNotificationTitle;
 }
