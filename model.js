@@ -1,7 +1,7 @@
 const app = document.getElementById('app');
 const appBeforeLogin = document.getElementById('app');
 const logo = '<img id="logoImg" src="./img/elliegramLogo.png">';
-const loggedInLogo = '<img id="LoggedInLogoImg" src="./favicon.png">';
+const loggedInLogo = '<img id="LoggedInLogoImg" src="./favicon.png">'
 
 const model = {
     app: {

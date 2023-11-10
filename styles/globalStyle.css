@@ -50,6 +50,11 @@ button:hover{
   #page > main {
     grid-area: main;
     background-color: black;
+
+    display: flex;
+    margin: auto;
+    height: 100%;
+    top: 10px;
   }
   
   #page > footer {
@@ -87,4 +92,22 @@ button:hover{
   }
   #realLogoutButton{
     background-color: tomato;
+  }
+
+  /* Main page wall content*/
+  #postStuffDIv{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  #postYourStuff{
+    width: 500px;
+    height: 10vh;
+    border-radius: 20px;
+    text-align: center;
+
+  }
+  #postStuffButton{
+    width: 500px;
   }

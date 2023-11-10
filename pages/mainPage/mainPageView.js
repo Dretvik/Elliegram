@@ -9,7 +9,12 @@ function mainPageView(){
             <div id="logoutwarningDiv"></div>
         </header>
         <nav>Navigation</nav>
-        <main></main>
+        <main>
+            <div id="postStuffDIv">
+                <textarea id="postYourStuff" placeholder="What are you thinking about? Tell your friends!"></textarea>
+                <button id="postStuffButton">Post</button>
+            </div>
+        </main>
         <footer>Elliegram &copy; 2023</footer>
     </section>
     `;
