@@ -14,18 +14,37 @@ function mainPageView(){
             <button id="logoutButton" onclick="logoutWarning(true)">Logout</button>
             <div id="logoutwarningDiv"></div>
         </header>
+
         <nav>
-        <img id="profileImgNavbar" src="${headerProfileImg}">
+            <img onclick="profilePageView()" id="profileImgNavbar" src="${headerProfileImg}">
+            <div onclick="profilePageView()">${user.displayName}</div>
             <div id="notificationDiv">${isNotification}</div>
             <button id="addNotificationBtn" onclick="addNotification()">Add Notification Test Button</button>
         </nav>
-        <main>
-            <div id="postStuffDIv">
-                <textarea id="postYourStuff" placeholder="What are you thinking about? Tell your friends!"></textarea>
-                <button id="postStuffButton">Post</button>
-            </div>
+
+        <main id="mainContentDiv">
         </main>
+
         <footer>Elliegram &copy; 2023</footer>
     </section>
     `;
+    pageTitleNotification();
+    wallContentView();
+}
+
+// Wall Content 
+function wallContentView(){ 
+    const wallContent = document.getElementById('mainContentDiv');
+    wallContent.innerHTML = /*HTML*/`
+        <div id="wallContentDiv">
+            <div id="postStuffDIv">
+                <textarea id="postYourStuff" placeholder="What are you thinking about? Tell your friends!"></textarea>
+                <button id="postStuffButton">Post</button>
+                <div></div>
+            </div>
+            <div>Hello peeps
+                <p>Dummy text</p>
+            </div>
+        </div>
+        `;
 }

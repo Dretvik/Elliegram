@@ -1,0 +1,23 @@
+#wallContentDiv{
+    display: grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: repeat(2, 40vw);
+    padding: 2vw;
+}
+  /* Main page wall content*/
+  #postStuffDIv{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  #postYourStuff{
+    width: 30vw;
+    height: 10vh;
+    border-radius: 20px;
+    text-align: center;
+
+  }
+  #postStuffButton{
+    width: 30vw;
+  }

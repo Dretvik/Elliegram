@@ -20,4 +20,5 @@ function loginPageView(){
     </div>
     `;
     addEventlistenersLoginPage();
+    document.getElementById('pageTitle').innerText = 'Login or register to Elliegram';
 }

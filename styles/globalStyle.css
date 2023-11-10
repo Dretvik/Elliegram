@@ -33,8 +33,8 @@ button:hover{
       "head head"
       "nav  main"
       "nav  foot";
-    grid-template-rows: 140px 1fr 40px;
-    grid-template-columns: 150px 1fr;
+    grid-template-rows: 140px 80.5vh 40px;
+    grid-template-columns: 150px 91.1vw;
   }
   
   #page > header {
@@ -92,24 +92,6 @@ button:hover{
   }
   #realLogoutButton{
     background-color: tomato;
-  }
-
-  /* Main page wall content*/
-  #postStuffDIv{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    border-radius: 20px;
-  }
-  #postYourStuff{
-    width: 500px;
-    height: 10vh;
-    border-radius: 20px;
-    text-align: center;
-
-  }
-  #postStuffButton{
-    width: 500px;
   }
 
   #profileImgNavbar{

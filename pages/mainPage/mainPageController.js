@@ -20,8 +20,20 @@ function addNotification(){
         newNote: 'Hello im a new notification',
     }
     model.app.loggedInUser.notifications.push(newNotification);
+    updateNavbarAndTitle();
+}
+
+function updateNavbarAndTitle() {
+    const user = model.app.loggedInUser;
+    const isNotification = user.notifications.length > 0 ?
+        `<img id="notificationVarning" src="./img/thumbnails/notification.png">
+        <div id="numberOfNotificationsDiv">${model.app.loggedInUser.notifications.length}</div>` :
+        ``;
+
+    document.getElementById('profileImgNavbar').src = user.profilePicture;
+    document.getElementById('notificationDiv').innerHTML = isNotification;
+
     pageTitleNotification();
-    mainPageView();
 }
 
 function pageTitleNotification(){
