@@ -1,4 +1,12 @@
-
 .registrationPageRows {
+    display: flex;
+    justify-content: center;
     margin: 10px;
+}
+.registrationColoumnA{
+    width: 200px;
+    text-align: end;
+}
+.registrationColoumnB{
+    width: 200px;
 }
