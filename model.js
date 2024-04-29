@@ -24,6 +24,7 @@ const model = {
     },
     //Data
     data: {
+        newsFeedContent: [],
         users: [
             {
                 username: '',
@@ -59,7 +60,7 @@ const model = {
                 friends: [],
                 hobbies: [],
                 groups: [],
-                notifications: [''],
+                notifications: [],
             },            {
                 username: 'Chris',
                 password: '1234',
@@ -70,7 +71,7 @@ const model = {
                 friends: [],
                 hobbies: [],
                 groups: [],
-                notifications: [''],
+                notifications: [],
             },
         ],
     },

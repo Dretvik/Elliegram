@@ -42,3 +42,28 @@ function pageTitleNotification(){
     `Elliegram`;
     document.getElementById('pageTitle').innerText = isNotificationTitle;
 }
+
+function pushNews() {
+    const newsToPush = document.getElementById('postYourStuff').value;
+
+    const newNews = {
+        content: newsToPush,
+    }
+    model.data.newsFeedContent.push(newNews);
+}
+
+function generateNewFeed() {
+    let newsFeedWall = '';
+    if (model.data.newsFeedContent.length > 0){
+        for (let news of model.data.newsFeedContent) {
+            newsFeedWall += /*HTML*/`
+            <div>${model.app.loggedInUser.username} posted:
+            <p>${news.content}</p>
+            </div>
+            `;
+        }
+    } else {
+        newsFeedWall = `No news to show`;
+    }
+    return newsFeedWall;
+}

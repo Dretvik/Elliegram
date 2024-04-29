@@ -39,8 +39,10 @@ function wallContentView(){
         <div id="wallContentDiv">
             <div id="postStuffDIv">
                 <textarea id="postYourStuff" placeholder="What are you thinking about? Tell your friends!"></textarea>
-                <button id="postStuffButton">Post</button>
-                <div></div>
+                <button onclick="pushNews();wallContentView()" id="postStuffButton">Post</button>
+                <div id="newsFeedWall">
+                ${generateNewFeed()}
+                </div>
             </div>
             <div>Hello peeps
                 <p>Dummy text</p>
